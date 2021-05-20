@@ -41,10 +41,10 @@ const onSubmit = async (e) =>{
     return(
         <div className="container-modal">
             <form className="form" onSubmit={onSubmit} >
-                <input type="text"  onChange={handleNueva} placeholder='Id' value={paciente.id}  name="id" />
-                <input type="text"  onChange={handleNueva} placeholder='Name' value={paciente.name} name="name"/>
-                <input type="text"  onChange={handleNueva} name="surname" placeholder='SurName' value={paciente.surname} name="surname"/>
-                <input type="number" onChange={handleNueva} name="age" placeholder='Age' value={paciente.age}/>
+                <input type="text" required onChange={handleNueva} placeholder='Id' value={paciente.id}  name="id" />
+                <input type="text" required onChange={handleNueva} placeholder='Name' value={paciente.name} name="name"/>
+                <input type="text" required  onChange={handleNueva} name="surname" placeholder='SurName' value={paciente.surname} name="surname"/>
+                <input type="number" required onChange={handleNueva} name="age" placeholder='Age' value={paciente.age}/>
                 <button type="submit"  className="btn-modal" >Añadir</button>
             </form>
 
