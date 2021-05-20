@@ -22,7 +22,7 @@ const [area3,setArea3]=useState('');
 
 useEffect(() => {
   getData()
-}, [concrete, gravel, bitumen, otro])
+}, [concrete, gravel, bitumen, otro,block])
 
 const getData= ()=>{
   let suma=0;  let suma2=0;  let suma3=0;
